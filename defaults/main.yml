@@ -6,10 +6,9 @@ proxmox_api_password:
 proxmox_token_id:
 proxmox_api_token_secret:
 proxmox_api_host: 
-proxmox_password:
-proxmox_description:
+proxmox_description: 'Managed with Ansible.'
 proxmox_memory:
-proxmox_cores:
+proxmox_cpu_cores: 4
 proxmox_clone: 
 proxmox_onboot: 
 proxmox_pool:
@@ -19,6 +18,7 @@ proxmox_validate_certs: no
 
 ### lxc ###
 proxmox_ct_hostname:
+proxmox_ct_password:
 proxmox_ct_os_temlate:
 proxmox_ct_clone_type: full 
 proxmox_ct_netif: 
@@ -37,6 +37,7 @@ proxmox_ct_features:
 
 ### kvm ###
 proxmox_kvm_cpu: kvm64
+proxmox_kvm_vcpus: 2
 proxmox_kvm_cpu_freeze:
 proxmox_kvm_cpulimit: 
 proxmox_kvm_cpuunits: 
