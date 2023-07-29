@@ -1,0 +1,5 @@
+---
+- name: 'Import tasks'
+  include_tasks: "{{ tasks_file }}.yml"
+
+# add option to create both lxc and kvm's parallel
