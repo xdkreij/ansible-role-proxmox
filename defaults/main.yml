@@ -1,0 +1,91 @@
+### generic ###
+proxmox_vmid: 
+proxmox_node: 
+proxmox_api_user:
+proxmox_api_password:
+proxmox_token_id:
+proxmox_api_token_secret:
+proxmox_api_host: 
+proxmox_password:
+proxmox_description:
+proxmox_memory:
+proxmox_cores:
+proxmox_clone: 
+proxmox_onboot: 
+proxmox_pool:
+proxmox_state: present
+proxmox_storage: local
+proxmox_validate_certs: no
+
+### lxc ###
+proxmox_ct_hostname:
+proxmox_ct_os_temlate:
+proxmox_ct_clone_type: full 
+proxmox_ct_netif: 
+proxmox_ct_enforcing:
+proxmox_ct_hookscript:
+proxmox_ct_public_key:
+proxmox_ct_purge:
+proxmox_ct_tags:
+proxmox_ct_unpriviledged:
+proxmox_ct_disk_options:
+proxmox_ct_disk_mounts:
+proxmox_ct_nameserver:
+proxmox_ct_ip_address: 
+proxmox_ct_searchdomain:
+proxmox_ct_features:
+
+### kvm ###
+proxmox_kvm_cpu: kvm64
+proxmox_kvm_cpu_freeze:
+proxmox_kvm_cpulimit: 
+proxmox_kvm_cpuunits: 
+proxmox_kvm_cpu_sockets: 
+proxmox_kvm_acpi: yes
+proxmox_kvm_agent: yes
+proxmox_kvm_autostart: no
+proxmox_kvm_balloon: 0
+proxmox_kvm_bios: seabios
+proxmox_kvm_smbios:
+proxmox_kvm_boot: cnd
+proxmox_kvm_bootdisk: scsi
+proxmox_kvm_sata:
+proxmox_kvm_scsi:
+proxmox_kvm_scsihw: virtio-scsi-pci
+proxmox_kvm_delete:
+proxmox_kvm_digest:
+proxmox_kvm_args: 
+proxmox_kvm_format: qcow2
+proxmox_kvm_clone_full: yes
+proxmox_kvm_hugepages: 
+proxmox_kvm_ide: 
+proxmox_kvm_keyboard: 
+proxmox_kvm_kvm: yes 
+proxmox_kvm_lock:  
+proxmox_kvm_localtime: yes 
+proxmox_kvm_startdate: 
+proxmox_kvm_machine: 
+proxmox_kvm_migrate_downtime: 
+proxmox_kvm_migrate_speed: 
+proxmox_kvm_name: 
+proxmox_kvm_net: 
+proxmox_kvm_newid: 
+proxmox_kvm_numa: 
+proxmox_kvm_ostype: l26
+proxmox_kvm_parallel: 
+proxmox_kvm_protection: 
+proxmox_kvm_reboot: 
+proxmox_kvm_revert: 
+proxmox_kvm_serial: 
+proxmox_kvm_shares: 
+proxmox_kvm_skiplock: 
+proxmox_kvm_snapname: 
+proxmox_kvm_target:  
+proxmox_kvm_usb_tablet: 
+proxmox_kvm_time_drift_fix: 
+proxmox_kvm_template: no
+proxmox_kvm_timeout: 30 
+proxmox_kvm_update: 
+proxmox_kvm_vga: std
+proxmox_kvm_virtio: 
+proxmox_kvm_watchdog: 
