@@ -1,39 +1,43 @@
 ### generic ###
 proxmox_vmid: 
-proxmox_node: 
-proxmox_api_user:
-proxmox_api_password:
-proxmox_token_id:
-proxmox_api_token_secret:
-proxmox_api_host: 
+#proxmox_node: 
+#proxmox_api_user:
+#proxmox_api_password:
+#proxmox_token_id:
+#proxmox_api_token_secret:
+#proxmox_api_host: 
 proxmox_description: 'Managed with Ansible.'
 proxmox_memory:
-proxmox_cpu_cores: 4
+proxmox_cpu_cores: 1
 proxmox_clone: 
-proxmox_onboot: 
-proxmox_pool:
+proxmox_onboot: false
+proxmox_pool: ""
 proxmox_state: present
-proxmox_storage: local
 proxmox_validate_certs: no
 
 ### lxc ###
+proxmox_ct_default_behavior: compatibility
 proxmox_ct_hostname:
-proxmox_ct_password:
-proxmox_ct_os_temlate:
+proxmox_ct_password: 'thisisadefaultpasswordandmustbeatleast5characterslong'
+proxmox_ct_cpu_count: 4
+proxmox_ct_storage: local
+promox_ct_os_template:
 proxmox_ct_clone_type: full 
 proxmox_ct_netif: 
-proxmox_ct_enforcing:
+proxmox_ct_enforcing: false
 proxmox_ct_hookscript:
 proxmox_ct_public_key:
-proxmox_ct_purge:
-proxmox_ct_tags:
-proxmox_ct_unpriviledged:
+proxmox_ct_purge: false
+#proxmox_ct_tags:
+proxmox_ct_unpriviledged: false
 proxmox_ct_disk_options:
-proxmox_ct_disk_mounts:
+#proxmox_ct_disk_mounts:
 proxmox_ct_nameserver:
 proxmox_ct_ip_address: 
 proxmox_ct_searchdomain:
 proxmox_ct_features:
+
+
 
 ### kvm ###
 proxmox_kvm_cpu: kvm64
@@ -42,6 +46,7 @@ proxmox_kvm_cpu_freeze:
 proxmox_kvm_cpulimit: 
 proxmox_kvm_cpuunits: 
 proxmox_kvm_cpu_sockets: 
+proxmox_storage: 
 proxmox_kvm_acpi: yes
 proxmox_kvm_agent: yes
 proxmox_kvm_autostart: no
